@@ -50,6 +50,25 @@ img {
     align-items: center;
     height: 100%;
 }
+.grid{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card {
+    text-align: center;
+    color: #333;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 20px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 10px;
+    z-index: 4;
+}
 
 /* nav */
 .navbar {
@@ -90,7 +109,52 @@ img {
 .showcase {
     height: 400px;
     background-color: var(--primary);
-    overflow: hidden;
     color: white;
     position: relative;
+ 
+}
+.showcase .grid{
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    overflow: visible;
+}
+.showcase h1{
+
+    font-size: 4rem;
+}
+.showcase p {
+
+    margin: 20px 0 ;
+}
+.showcase-container{
+
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+.showcase-form {
+
+    position: relative;
+    height: 100%;
+    top: 60px;
+    justify-content: flex-end;
+
+}
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+.showcase-form input[type = 'text'] , 
+.showcase-form input[type='email'] {
+
+    border: 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    margin: 10px 0 ;
+    width: 100%;
+    padding: 3px;
+    font-size: 1rem;
+}
+.showcase-form input:focus {
+    outline: none;
+
 }
