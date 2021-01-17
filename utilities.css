@@ -1,0 +1,159 @@
+/* utility */
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    text-align: center;
+    color: #333;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    z-index: 4;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: white;
+    border: 1px solid #333;
+    color: #333333;
+    transform: scale(0.95);
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid #333;
+    color: #333333;
+    transform: scale(0.95);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.marginy-1 {
+    margin: 1rem 0;
+
+
+}
+
+.marginy-2 {
+    margin: 1.5rem 0;
+
+
+}
+
+.marginy-3 {
+    margin: 2rem 0;
+
+
+}
+
+.marginy-4 {
+
+    margin: 3rem 0;
+}
+.margin-1 {
+
+    margin: 1rem ;
+}
+
+.margin-2 {
+
+    margin: 2rem;
+}
+
+.margin-3 {
+
+    margin: 3rem;
+}
+
+.margin-4 {
+
+    margin: 4rem;
+}
+
+/* padding */
+.paddingy-1 {
+    padding: 1rem 0;
+
+
+}
+
+.paddingy-2 {
+    padding: 1.5rem 0;
+
+
+}
+
+.paddingy-3 {
+    padding: 2rem 0;
+
+
+}
+
+.paddingy-4 {
+
+    padding: 3rem 0;
+}
+
+.padding-1 {
+
+    padding: 1rem;
+}
+
+.padding-2 {
+
+    padding: 2rem;
+}
+
+.padding-3 {
+
+    padding: 3rem;
+}
+
+.padding-4 {
+
+    padding: 4rem;
+}
+/* icom */
+i {
+
+    margin: 1rem;
+}
