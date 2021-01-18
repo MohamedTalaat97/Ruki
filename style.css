@@ -3,7 +3,10 @@
 /* base */
 
 :root {
+    --dark: #9104fb;
     --primary: #8400ff;
+    --secondary: #1c3fa8;
+    --lite: #f4f4f4;
 }
 
 * {
@@ -84,6 +87,8 @@ img {
     background-color: var(--primary);
     color: white;
     position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .showcase .grid {
@@ -170,6 +175,10 @@ img {
     color: var(--primary);
 }
 
+.stats i {
+    color: #222222;
+}
+
 
 /* cmd */
 
@@ -200,4 +209,80 @@ img {
 
 .cloud .grid {
     grid-template-columns: 4fr 3fr;
+}
+
+
+/* languages */
+
+.languages-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    margin: 18px 10px 40px;
+    transition: transform 0.3s ease;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+}
+
+.languages .card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* footer */
+
+footer {
+    background-color: #9104fb;
+    color: var(--lite);
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+footer ul {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer ul a {
+    color: var(--lite);
+}
+
+.social {
+    color: white;
+}
+
+
+/* tablets and under */
+
+@media(max-width: 760px) {}
+
+
+/* mobile */
+
+@media (max-width :500px) {
+    .navbar {
+        height: 110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 10px;
+    }
 }
