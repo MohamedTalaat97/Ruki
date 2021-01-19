@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
     font-family: 'lato', sans-serif;
     color: #333333;
@@ -206,6 +207,7 @@ body {
 }
 
 .features-head img,
+.docs-head img,
 .subhead img {
     width: 60%;
     justify-self: center;
@@ -223,6 +225,34 @@ body {
     grid-column: 1/ 3;
 }
 
+/* docs */
+.docs-main h3 {
+    margin: 20px 0;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+}
+
+.docs-main .card {
+    text-align: left;
+}
+
+.docs-main ul li {
+
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.docs-main ul li a:hover {
+
+    font-weight: bold;
+
+}
 
 /* footer */
 
@@ -256,6 +286,7 @@ footer ul a {
 /* tablets and under */
 
 @media(max-width: 760px) {
+
     .grid,
     .showcase .grid,
     .stats .grid,
@@ -264,17 +295,21 @@ footer ul a {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
+
     .showcase {
         height: auto;
     }
+
     .showcase-text {
         text-align: center;
         margin-top: 20px;
     }
+
     .showcase-form {
         width: 60%;
         margin: auto;
     }
+
     footer .social {
         text-align: center;
     }
@@ -287,20 +322,25 @@ footer ul a {
     .navbar {
         height: 130px;
     }
+
     .navbar .flex {
         flex-direction: column;
     }
+
     .navbar ul {
         background-color: rgba(0, 0, 0, 0.1);
         padding: 10px;
     }
+
     .showcase-text {
         line-height: 60px;
     }
+
     .showcase-form {
         width: 80%;
         margin: auto;
     }
+
     .cloud h3 {
         line-height: 60px;
     }

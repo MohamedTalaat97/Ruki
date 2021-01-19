@@ -5,6 +5,8 @@
     --primary: #8400ff;
     --secondary: #1c3fa8;
     --lite: #f4f4f4;
+    --success: green;
+    --danger: red;
 }
 
 * {
@@ -40,6 +42,12 @@ img {
     width: 100%
 }
 
+code,
+pre {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
 
 /* utility */
 
@@ -156,6 +164,23 @@ img {
     color: var(--dark);
 }
 
+/* alert */
+.alert {
+    background-color: var(--lite);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.alert i {
+    margin-right: 10px;
+
+}
+
+.alert-success {
+    background-color: var(--success);
+    color: white;
+}
 
 /* text */
 
@@ -182,6 +207,7 @@ img {
 .xl {
     font-size: 4rem;
 }
+
 
 
 /* margin */
