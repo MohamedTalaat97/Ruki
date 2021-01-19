@@ -49,6 +49,7 @@ pre {
     padding: 10px;
 }
 
+
 /* utility */
 
 .container {
@@ -164,17 +165,19 @@ pre {
     color: var(--dark);
 }
 
+
 /* alert */
+
 .alert {
     background-color: var(--lite);
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px;
+    border-radius: 5px;
 }
 
 .alert i {
     margin-right: 10px;
-
 }
 
 .alert-success {
@@ -182,7 +185,27 @@ pre {
     color: white;
 }
 
+
 /* text */
+
+
+/* Text colors */
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--lite);
+}
 
 .text-center {
     text-align: center;
@@ -207,7 +230,6 @@ pre {
 .xl {
     font-size: 4rem;
 }
-
 
 
 /* margin */
